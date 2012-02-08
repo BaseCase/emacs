@@ -5,7 +5,7 @@
 (require 'keys-config)
 (require 'org-config)
 (require 'visuals-config)
-(require 'js2-mode-config)
+;(require 'js2-mode-config)
 ;(require 'auto-complete-config)
 ;(require 'python-config)
 ;(require 'nav-config)
@@ -27,7 +27,7 @@
 (require 'multi-web-config)
 
 ;minor behavior changes:
-(setq-default indent-tabs-mode nil)
+;(setq-default indent-tabs-mode nil)
 (set-variable 'scroll-conservatively 5)
 (blink-cursor-mode -1)
 (set-variable 'initial-major-mode 'text-mode)

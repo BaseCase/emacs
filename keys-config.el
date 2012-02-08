@@ -31,6 +31,12 @@
  (scroll-down 1))
 
 
+;;key-chord business
+(require 'key-chord)
+(key-chord-mode 1)
 
+(key-chord-define-global ";'" 'ido-switch-buffer)
+(key-chord-define-global ",." 'point-to-register)
+(key-chord-define-global "<>" 'jump-to-register)
 
 (provide 'keys-config)

@@ -9,12 +9,12 @@
 (require 'vivid-chalk)
 (require 'zen-and-art)
 ;(color-theme-zenburn)
-;(color-theme-vivid-chalk)
-(color-theme-zen-and-art)
+(color-theme-vivid-chalk)
+;(color-theme-zen-and-art)
 
 ;(setq-default show-trailing-whitespace t)
 
-(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-18-*-*-*-p-0-iso10646-1")
+(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
 
 ;(set-default-font "-apple-consolas-medium-r-normal--18-0-72-72-m-0-iso10646-1")
 ;(set-default-font "Consolas-12")
