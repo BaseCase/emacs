@@ -12,31 +12,29 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-	 (color-theme-vivid-chalk)
-;	 (color-theme-vibrant-ink)
-;     (color-theme-zenburn)
-;     (color-theme-hober)
+     (color-theme-vivid-chalk)
+     ;(color-theme-vibrant-ink)
+     ;(color-theme-zenburn)
+     ;(color-theme-hober)
      ))
 
 (set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
-;(global-hl-line-mode 1)
-;(set-face-background 'hl-line "gray16")
 (blink-cursor-mode -1)
 
-;transparent emacs!!1!!1!one!! 
+;; transparent emacs!!1!!1!one!! 
 (defun djcb-opacity-modify (&optional dec)
   "modify the transparency of the emacs frame; if DEC is t,
     decrease the transparency, otherwise increase it in 10%-steps"
   (let* ((alpha-or-nil (frame-parameter nil 'alpha)) ; nil before setting
-	 (oldalpha (if alpha-or-nil alpha-or-nil 100))
-	 (newalpha (if dec (- oldalpha 10) (+ oldalpha 10))))
+         (oldalpha (if alpha-or-nil alpha-or-nil 100))
+         (newalpha (if dec (- oldalpha 10) (+ oldalpha 10))))
     (when (and (>= newalpha frame-alpha-lower-limit) (<= newalpha 100))
       (modify-frame-parameters nil (list (cons 'alpha newalpha))))))
 
 ;; display full file path in frame title
 (setq frame-title-format
       (list (format "%s %%S: %%j " (system-name))
-	    '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
+            '(buffer-file-name "%f" (dired-directory dired-directory "%b"))))
 
 (add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
 (require 'rainbow-mode)

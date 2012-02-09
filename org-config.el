@@ -5,7 +5,7 @@
 
 (setq org-capture-templates
       '(("r" "remember" entry (file "")
-	 "")
-	))
+         "")
+        ))
 
 (provide 'org-config)

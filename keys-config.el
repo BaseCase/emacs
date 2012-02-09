@@ -20,15 +20,15 @@
 (global-set-key (kbd "C-8") '(lambda()(interactive)(djcb-opacity-modify t)))
 ;; reset opacity to 100%
 (global-set-key (kbd "C-0") '(lambda()(interactive)
-			       (modify-frame-parameters nil `((alpha . 100)))))
+                               (modify-frame-parameters nil `((alpha . 100)))))
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
 (global-set-key (kbd "C-c y") '(lambda ()
-			   (interactive)
-			   (popup-menu 'yank-menu)))
+                                 (interactive)
+                                 (popup-menu 'yank-menu)))
 
 ;;key-chord business
 (add-to-list 'load-path (concat cjb-load-path "key-chord"))
@@ -40,14 +40,14 @@
 (key-chord-define-global "<>" 'jump-to-register)
 
 (defun up-one ()
- "idea taken from Tom Laudeman"
- (interactive)
- (scroll-up 1))
+  "idea taken from Tom Laudeman"
+  (interactive)
+  (scroll-up 1))
 
 (defun down-one ()
- "idea taken from Tom Laudeman"
- (interactive)
- (scroll-down 1))
+  "idea taken from Tom Laudeman"
+  (interactive)
+  (scroll-down 1))
 
 
 (provide 'keys-config)
