@@ -1,30 +1,4 @@
-Casey's Emacs setup. It's a little more complicated-looking than just a straight .emacs file, but this way makes it a lot more manageable in the long run. To set it up:
+cjb's Emacs setup
+=================
 
-1. Create a .emacs in your ~ that has the following two lines:
-   (add-to-list 'load-path <<LOCATION OF EMACS DIR>>)
-   (require 'emacs-config)
-
-2. Change 'cjb-load-path variable in load-path-config.el to point to this folder
-
-
-*emacs-config.el* is the main control panel. From here you should be able to turn all the major stuff on and off. For finer-grained control, check the *XX-config.el* files.
-
-
-_(other notes)_
-
-If...
-
-...you want Python, 
-  1. run 'python setup.py install' from the PyMacs directory
-  2. run 'python setup.py install' from the rope directory
-  3. run 'python setup.py install' from the ropemacs directory
-  4. I should probably make a script that can do this...
-  5. Bask in the glory
-
-...you're using Cygwin,
-  1. uncomment the require line in emacs-config.el
-
-...something happens that I haven't accounted for here,
-  1. it is because I'm way lazy.
-
-
+TODO: fill out the rest of this README.
