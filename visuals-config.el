@@ -12,7 +12,9 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-hober)))
+     (color-theme-zenburn)
+;     (color-theme-hober)
+     ))
 
 (set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
 ;(global-hl-line-mode 1)
