@@ -1,6 +1,12 @@
 * Keyboard shortcuts
 |-----------------+-------------------------------------|
 |                 |                                     |
+| +++++++++++++++ | KEY CHORDS                          |
+| ;'              | switch buffer                       |
+| :"              | buffer menu                         |
+| ,.              | set register for point              |
+| <>              | jump to register                    |
+|                 |                                     |
 | +++++++++++++++ | RECTANGLES                          |
 | C-x r t         | rectangle replace text              |
 | C-x r k         | kill rectangle                      |
