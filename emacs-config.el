@@ -32,5 +32,6 @@
 (require 'visuals-config)
 (require 'keys-config)
 (require 'yasnippet-config)
+(require 'whitespace-config)
 
 (provide 'emacs-config)
