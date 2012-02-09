@@ -33,5 +33,6 @@
 (require 'keys-config)
 (require 'yasnippet-config)
 (require 'whitespace-config)
+(require 'javascript-config)
 
 (provide 'emacs-config)
