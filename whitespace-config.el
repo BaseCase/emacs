@@ -1,4 +1,5 @@
 (setq-default tab-width 4)
+(setq tab-stop-list (number-sequence 4 120 4))
 (global-whitespace-mode t)
 (setq whitespace-style
       '(face
