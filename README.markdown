@@ -1,7 +1,10 @@
 cjb's Emacs setup
 =================
 
-To set up, `mv .emacs ~`
+My personal Emacs configuration.
 
+## Setting up ##
 
-TODO: fill out the rest of this README.
+1. `mv .emacs ~`
+1. Make sure you have these fonts installed: http://font.ubuntu.com/
+(or pick your own)
