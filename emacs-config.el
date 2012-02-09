@@ -31,5 +31,6 @@
 (require 'org-config)
 (require 'visuals-config)
 (require 'keys-config)
+(require 'yasnippet-config)
 
 (provide 'emacs-config)
