@@ -1,13 +1,21 @@
 * Keyboard shortcuts
 |-----------------+-------------------------------------|
 |                 |                                     |
-| +++++++++++++++ | KEY CHORDS                          |
+| INDENTATION     |                                     |
+| M-q TAB         | insert a TAB character              |
+| C-j             | newline and indent relative         |
+|                 |                                     |
+|-----------------+-------------------------------------|
+|                 |                                     |
+| KEY CHORDS      |                                     |
 | ;'              | switch buffer                       |
 | :"              | buffer menu                         |
 | ,.              | set register for point              |
 | <>              | jump to register                    |
 |                 |                                     |
-| +++++++++++++++ | RECTANGLES                          |
+|-----------------+-------------------------------------|
+|                 |                                     |
+| RECTANGLES      |                                     |
 | C-x r t         | rectangle replace text              |
 | C-x r k         | kill rectangle                      |
 | C-x r y         | yank rectangle                      |
@@ -15,7 +23,7 @@
 |                 |                                     |
 |-----------------+-------------------------------------|
 |                 |                                     |
-| +++++++++++++++ | MACROS                              |
+| MACROS          |                                     |
 | C-x C-x C-[n/p] | scroll through macro ring           |
 | C-x e(eee)      | execute macro at top of macro ring  |
 | C-x C-k e       | edit macro                          |
@@ -24,14 +32,14 @@
 |                 |                                     |
 |-----------------+-------------------------------------|
 |                 |                                     |
-| +++++++++++++++ | MOVEMENT                            |
+| MOVEMENT        |                                     |
 | M-m             | go to beginning of text if indented |
 | C-l             | move scroll position around point   |
 | M-r             | move point within current screenful |
 |                 |                                     |
 |-----------------+-------------------------------------|
 |                 |                                     |
-| +++++++++++++++ | MISCELLANEOUS                       |
+| MISCELLANEOUS   |                                     |
 | M-\             | At end of line, delete whitespace   |
 | C-x i           | insert contents of file at point    |
 |                 |                                     |
