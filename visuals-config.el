@@ -12,7 +12,9 @@
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
-     (color-theme-zenburn)
+	 (color-theme-vivid-chalk)
+;	 (color-theme-vibrant-ink)
+;     (color-theme-zenburn)
 ;     (color-theme-hober)
      ))
 
