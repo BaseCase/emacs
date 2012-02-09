@@ -1,7 +1,10 @@
 (setq org-hide-leading-stars t)
-;;set up Remember
-(org-remember-insinuate)
 (setq org-directory "~/Dropbox/org")
-(setq org-default-notes-file (concat org-directory "/remember.org"))
+(setq org-default-notes-file (concat org-directory "/capture.org"))
+
+(setq org-capture-templates
+      '(("r" "remember" entry (file "")
+	 "")
+	))
 
 (provide 'org-config)

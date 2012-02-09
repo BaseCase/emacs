@@ -12,7 +12,8 @@
 (global-set-key (kbd "s-t") '(lambda () (interactive) (ansi-term "/bin/bash")))
 (global-set-key (kbd "s-i") 'rename-buffer)
 (global-set-key (kbd "s-/") 'comment-region)
-(global-set-key (kbd "C-c r") 'org-remember)
+(define-key global-map (kbd "C-c r")
+  (lambda () (interactive) (org-capture nil "r")))
 ;; increase opacity
 (global-set-key (kbd "C-9") '(lambda()(interactive)(djcb-opacity-modify)))
 ;; decrease opacity
