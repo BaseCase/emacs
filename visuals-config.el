@@ -1,5 +1,5 @@
 (tool-bar-mode -1)
-(menu-bar-mode -1)
+;;(menu-bar-mode -1)
 (set-variable 'scroll-conservatively 5)
 (setq inhibit-splash-screen t)
 (set-variable 'initial-scratch-message nil)
