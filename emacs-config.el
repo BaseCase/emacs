@@ -8,6 +8,7 @@
 (set-variable 'delete-by-moving-to-trash t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (put 'dired-find-alternate-file 'disabled nil)
+(setq ispell-program-name "/usr/local/bin/aspell")
 
 ;;word count
 (add-to-list 'load-path (concat cjb-load-path "wc"))
