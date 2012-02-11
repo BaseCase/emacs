@@ -35,5 +35,6 @@
 (require 'yasnippet-config)
 (require 'whitespace-config)
 (require 'javascript-config)
+(require 'coffee-config)
 
 (provide 'emacs-config)
