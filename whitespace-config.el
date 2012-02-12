@@ -11,6 +11,13 @@
 (add-hook 'js2-mode-hook
           (lambda () (setq indent-tabs-mode t)))
 
+;;set Coffeescript indenting to the standard
+(defun coffee-custom ()
+  "coffee-mode-hook"
+ (set (make-local-variable 'tab-width) 2))
+(add-hook 'coffee-mode-hook
+  '(lambda() (coffee-custom)))
+
 ;; (add-to-list 'load-path (concat cjb-load-path "smarttabs"))
 ;; (require 'smart-tabs-mode)
 ;; (add-hook 'js2-mode-hook 'smart-tabs-mode-enable)
