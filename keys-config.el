@@ -39,8 +39,8 @@
 (key-chord-mode 1)
 (key-chord-define-global ";'" 'ido-switch-buffer)
 (key-chord-define-global ":\"" 'buffer-menu-other-window)
-(key-chord-define-global ",." 'point-to-register)
-(key-chord-define-global "<>" 'jump-to-register)
+(key-chord-define-global "<>" 'point-to-register)
+(key-chord-define-global ",." 'jump-to-register)
 
 (defun up-one ()
   "idea taken from Tom Laudeman"
