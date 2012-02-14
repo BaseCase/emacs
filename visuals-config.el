@@ -6,6 +6,7 @@
 (show-paren-mode 1)
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
+(column-number-mode 1)
 
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
@@ -19,7 +20,7 @@
      ))
 
 (set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
-(blink-cursor-mode -1)
+;;(blink-cursor-mode -1)
 
 ;; transparent emacs!!1!!1!one!! 
 (defun djcb-opacity-modify (&optional dec)
