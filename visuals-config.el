@@ -7,6 +7,7 @@
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
 (column-number-mode 1)
+(add-hook 'buffer-menu-mode-hook 'hl-line-mode)
 
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
