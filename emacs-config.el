@@ -36,5 +36,6 @@
 (require 'whitespace-config)
 (require 'javascript-config)
 (require 'coffee-config)
+(require 'markdown-config)
 
 (provide 'emacs-config)
