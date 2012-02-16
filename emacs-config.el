@@ -29,6 +29,9 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;;Emacs PATH == Bash PATH
+(setenv "PATH" "/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/games:/Users/cjb/bin/scripts")
+
 (require 'org-config)
 (require 'visuals-config)
 (require 'keys-config)
