@@ -33,6 +33,12 @@
                                  (interactive)
                                  (popup-menu 'yank-menu)))
 
+(defun backwards-zap-to-char (char)
+  (interactive "cZap backwards to char: ")
+  (zap-to-char -1 char))
+
+(global-set-key (kbd "M-Z") 'backwards-zap-to-char)
+
 ;;key-chord business
 (add-to-list 'load-path (concat cjb-load-path "key-chord"))
 (require 'key-chord)
