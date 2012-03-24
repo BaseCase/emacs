@@ -12,6 +12,7 @@
 (global-set-key (kbd "s-t") '(lambda () (interactive) (ansi-term "/bin/bash")))
 (global-set-key (kbd "s-i") 'rename-buffer)
 (global-set-key (kbd "s-/") 'comment-region)
+(global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
 (define-key global-map (kbd "C-c r")
   (lambda () (interactive) (org-capture nil "r")))
 ;; increase opacity
