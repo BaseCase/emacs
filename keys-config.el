@@ -47,6 +47,8 @@
 (key-chord-define-global ":\"" 'buffer-menu-other-window)
 (key-chord-define-global "<>" 'point-to-register)
 (key-chord-define-global ",." 'jump-to-register)
+(key-chord-define-global "-=" 'cjb-spec-runner)
+(key-chord-define-global "_+" 'cjb-set-current-spec)
 
 (defun up-one ()
   "idea taken from Tom Laudeman"
