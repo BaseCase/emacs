@@ -40,6 +40,6 @@
 (require 'javascript-config)
 (require 'coffee-config)
 (require 'markdown-config)
-(require 'cjb-spec-runner)
+(require 'spec-runner)
 
 (provide 'emacs-config)

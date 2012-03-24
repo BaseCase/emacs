@@ -24,5 +24,4 @@
 (defcustom cjb-current-spec "foo" "the location of the test(s) to run")
 
 
-(provide 'cjb-spec-runner)
-
+(provide 'spec-runner)
