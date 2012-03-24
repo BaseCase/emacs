@@ -19,7 +19,8 @@
 (defun cjb-set-current-spec ()
   "Set the current buffer's file to the current spec"
   (interactive)
-  (setq cjb-current-spec buffer-file-name))
+  (setq cjb-current-spec buffer-file-name)
+  (message (concat "Set current spec file to " cjb-current-spec)))
 
 (defcustom cjb-current-spec "foo" "the location of the test(s) to run")
 
