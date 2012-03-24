@@ -1,5 +1,6 @@
 ;; easy in-editor running of Jasmine specs
 ;; (and maybe other tests too if I get not-lazy
+;; make sure your Node path is set correctly
 
 (require 'ansi-color)
 

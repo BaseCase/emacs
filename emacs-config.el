@@ -32,6 +32,8 @@
 ;;Emacs PATH == Bash PATH
 (setenv "PATH" "/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/games:/Users/cjb/bin/scripts")
 
+(setenv "NODE_PATH" "/usr/local/lib/node_modules")
+
 (require 'org-config)
 (require 'visuals-config)
 (require 'keys-config)
