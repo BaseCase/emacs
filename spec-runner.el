@@ -1,7 +1,7 @@
-;; easy in-editor running of Jasmine specs
-;; (and maybe other tests too if I get not-lazy
+;; easy in-editor running of specs
 ;; make sure your Node path is set correctly
 
+; make sure the output display works
 (require 'ansi-color)
 
 (defadvice display-message-or-buffer (before ansi-color activate)
@@ -12,10 +12,11 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
+
 (defun cjb-spec-runner ()
-  "Run Jasmine spec right here, in your very own editor. You don't even need pants!"
+  "Run specs in Emacs!"
   (interactive)
-  (shell-command (concat "jasmine-node --coffee " cjb-current-spec)))
+  (shell-command (concat cjb-spec-command cjb-current-spec)))
 
 (defun cjb-set-current-spec ()
   "Set the current buffer's file to the current spec"
@@ -24,6 +25,6 @@
   (message (concat "Set current spec file to " cjb-current-spec)))
 
 (defcustom cjb-current-spec "foo" "the location of the test(s) to run")
-
+(defcustom cjb-spec-command "jasmine-node --coffee " "the command to run specs") ;make sure there's a space there
 
 (provide 'spec-runner)
