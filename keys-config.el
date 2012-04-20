@@ -13,6 +13,7 @@
 (global-set-key (kbd "s-i") 'rename-buffer)
 (global-set-key (kbd "s-/") 'comment-region)
 (global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
+(global-set-key (kbd "M-H") 'ns-do-hide-emacs)
 (define-key global-map (kbd "C-c r")
   (lambda () (interactive) (org-capture nil "r")))
 ;; increase opacity
