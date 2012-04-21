@@ -8,4 +8,9 @@
          "")
         ))
 
+(add-hook 'org-capture-after-finalize-hook
+          '(lambda ()
+             (kill-buffer "capture.org")))
+
+
 (provide 'org-config)
