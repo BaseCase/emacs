@@ -9,7 +9,7 @@
 (global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
 (global-set-key (kbd "C-M-t") 'text-mode)
 (global-set-key (kbd "C-M-o") 'org-mode)
-;(global-set-key (kbd "s-t") '(lambda () (interactive) (ansi-term "/bin/bash")))
+(global-set-key (kbd "M-T") '(lambda () (interactive) (term "/bin/bash")))
 ;(global-set-key (kbd "s-i") 'rename-buffer)
 ;(global-set-key (kbd "s-/") 'comment-region)
 ;(global-set-key (kbd "s-f") 'ns-toggle-fullscreen)
