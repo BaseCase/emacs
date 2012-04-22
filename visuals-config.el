@@ -21,7 +21,7 @@
      ;(color-theme-hober)
      ))
 
-(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-15-*-*-*-p-0-iso10646-1")
+(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
 ;;(blink-cursor-mode -1)
 
 ;; transparent emacs!!1!!1!one!! 
