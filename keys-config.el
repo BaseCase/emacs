@@ -62,5 +62,14 @@
   (interactive)
   (scroll-down 1))
 
+(defun cjb-reset-keys ()
+  "re-set my keys that get shadowed by stuff I don't like in some modes"
+  (local-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
+  (local-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+  (local-set-key (kbd "S-C-<down>") 'shrink-window)
+  (local-set-key (kbd "S-C-<up>") 'enlarge-window))
+
+(add-hook 'org-mode-hook '(lambda () (set-cjb-org-keys)))
+
 
 (provide 'keys-config)
