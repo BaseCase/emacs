@@ -8,7 +8,7 @@
 (setq mouse-wheel-progressive-speed nil)
 (column-number-mode 1)
 (global-hl-line-mode t)
-(set-face-background 'hl-line "#222")
+(set-face-background 'hl-line "#333")
 
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
