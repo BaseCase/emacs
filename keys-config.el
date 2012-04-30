@@ -69,7 +69,6 @@
   (local-set-key (kbd "S-C-<down>") 'shrink-window)
   (local-set-key (kbd "S-C-<up>") 'enlarge-window))
 
-(add-hook 'org-mode-hook '(lambda () (set-cjb-org-keys)))
-
+(add-hook 'org-mode-hook '(lambda () (cjb-reset-keys)))
 
 (provide 'keys-config)
