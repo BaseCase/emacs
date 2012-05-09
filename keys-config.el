@@ -11,16 +11,8 @@
 (global-set-key (kbd "C-M-o") 'org-mode)
 (global-set-key (kbd "M-T") '(lambda () (interactive) (term "/bin/bash")))
 (global-set-key (kbd "M-?") 'comment-region)
-(global-set-key (kbd "M-H") 'ns-do-hide-emacs)
 (define-key global-map (kbd "C-c r")
   (lambda () (interactive) (org-capture nil "r")))
-;; increase opacity
-(global-set-key (kbd "C-9") '(lambda()(interactive)(djcb-opacity-modify)))
-;; decrease opacity
-(global-set-key (kbd "C-8") '(lambda()(interactive)(djcb-opacity-modify t)))
-;; reset opacity to 100%
-(global-set-key (kbd "C-0") '(lambda()(interactive)
-                               (modify-frame-parameters nil `((alpha . 100)))))
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
@@ -29,9 +21,6 @@
                                (interactive)
                                (newline)
                                (indent-relative)))
-(global-set-key (kbd "C-c y") '(lambda ()
-                                 (interactive)
-                                 (popup-menu 'yank-menu)))
 
 (defun backwards-zap-to-char (char)
   (interactive "cZap backwards to char: ")

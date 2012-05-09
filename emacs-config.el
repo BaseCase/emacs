@@ -10,11 +10,6 @@
 (put 'dired-find-alternate-file 'disabled nil)
 (setq ispell-program-name "/usr/local/bin/aspell")
 
-(setq mac-option-key-is-meta nil)
-(setq mac-command-key-is-meta t)
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier nil)
-
 ;;word count
 (add-to-list 'load-path (concat cjb-load-path "wc"))
 (require 'wc)
