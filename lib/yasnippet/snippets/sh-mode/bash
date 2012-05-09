@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: bash
+# contributor: cjb
+# key: bash
+# --
+#!/bin/bash
+set -e
+
+$0
