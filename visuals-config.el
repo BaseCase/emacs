@@ -1,3 +1,5 @@
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 (setq inhibit-splash-screen t)
 (set-variable 'initial-scratch-message nil)
 (show-paren-mode 1)
