@@ -3,6 +3,9 @@
 (setq org-default-notes-file (concat org-directory "/capture.org"))
 (setq org-startup-indented t)
 
+(custom-set-faces
+ '(org-hide ((t (:foreground "black")))))
+
 (setq org-capture-templates
       '(("r" "remember" entry (file "")
          "")
