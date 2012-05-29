@@ -49,5 +49,6 @@
 (require 'coffee-config)
 (require 'markdown-config)
 (require 'spec-runner)
+(require 'scss-config)
 
 (provide 'emacs-config)
