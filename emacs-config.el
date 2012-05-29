@@ -29,6 +29,12 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+(defun path ()
+  "show current buffer's full filename and copy it to clipboard"
+  (interactive)
+  (shell-command (concat "echo " buffer-file-name " | pbcopy"))
+  (message buffer-file-name))
+
 ;;Emacs PATH == Bash PATH
 (setenv "PATH" "/usr/local/share/python:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/texbin:/usr/X11/bin:/opt/local/bin:/opt/local/sbin:/usr/games:/Users/cjb/bin/scripts")
 
