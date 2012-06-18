@@ -1,18 +1,11 @@
 (defvar cjb-load-path "~/emacs/lib/")
 
-(server-start)
 (setq make-backup-files nil)
 (put 'narrow-to-region 'disabled nil)
 (ido-mode t)
 (set-variable 'help-window-select t)
-(set-variable 'delete-by-moving-to-trash t)
 (fset 'yes-or-no-p 'y-or-n-p)
-(put 'dired-find-alternate-file 'disabled nil)
 (setq ispell-program-name "/usr/local/bin/aspell")
-
-;;word count
-(add-to-list 'load-path (concat cjb-load-path "wc"))
-(require 'wc)
 
 ;;Dired buffer names always end in a '/'
 (add-hook 'dired-mode-hook 'ensure-buffer-name-ends-in-slash)
