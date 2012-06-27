@@ -6,6 +6,7 @@
 (set-variable 'help-window-select t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq ispell-program-name "/usr/local/bin/aspell")
+(server-start)
 
 ;;Dired buffer names always end in a '/'
 (add-hook 'dired-mode-hook 'ensure-buffer-name-ends-in-slash)

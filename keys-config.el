@@ -17,10 +17,12 @@
 (global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
-(global-set-key (kbd "C-j") '(lambda ()
-                               (interactive)
-                               (newline)
-                               (indent-relative)))
+
+;;make CMD Meta and a couple other Mac-isms
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
 
 (defun backwards-zap-to-char (char)
   (interactive "cZap backwards to char: ")
