@@ -18,6 +18,10 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;;restore useful keys in term-mode
+(add-hook 'term-mode-hook '(lambda ()
+                             (local-set-key (kbd "C-]") 'other-window)))
+
 ;;make CMD Meta and a couple other Mac-isms
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
