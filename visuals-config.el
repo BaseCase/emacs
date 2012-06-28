@@ -20,7 +20,7 @@
      ;(color-theme-hober)
      ))
 
-(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-16-*-*-*-p-0-iso10646-1")
+(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
 
 (add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
 (require 'rainbow-mode)
