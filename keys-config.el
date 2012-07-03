@@ -21,7 +21,8 @@
 
 ;;restore useful keys in term-mode
 (add-hook 'term-mode-hook '(lambda ()
-                             (local-set-key (kbd "C-]") 'other-window)))
+                             (local-set-key (kbd "C-]") 'other-window)
+                             (local-set-key (kbd "M-x") 'execute-extended-command)))
 
 ;;make CMD Meta and a couple other Mac-isms
 (setq mac-option-key-is-meta nil)
