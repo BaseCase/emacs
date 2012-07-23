@@ -20,4 +20,4 @@
 
 (defcustom cjb-current-command "echo \"You have to set this.\"" "the command you want to run") ;make sure there's a space there
 
-(provide 'spec-runner)
+(provide 'command-runner)

@@ -42,7 +42,7 @@
 (require 'javascript-config)
 (require 'coffee-config)
 (require 'markdown-config)
-(require 'spec-runner)
+(require 'command-runner)
 (require 'scss-config)
 
 (provide 'emacs-config)
