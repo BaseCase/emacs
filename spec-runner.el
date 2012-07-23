@@ -1,6 +1,3 @@
-;; easy in-editor running of specs
-;; make sure your Node path is set correctly
-
 ; make sure the output display works
 (require 'ansi-color)
 
@@ -12,19 +9,15 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
-
-(defun cjb-spec-runner ()
-  "Run specs in Emacs!"
+(defun cjb-command-runner ()
   (interactive)
-  (shell-command (concat cjb-spec-command cjb-current-spec)))
+  (shell-command cjb-current-command))
 
-(defun cjb-set-current-spec ()
-  "Set the current buffer's file to the current spec"
-  (interactive)
-  (setq cjb-current-spec buffer-file-name)
-  (message (concat "Set current spec file to " cjb-current-spec)))
+(defun cjb-set-current-command (new-com)
+  (interactive "sSet command: ")
+  (setq cjb-current-command new-com)
+  (message (concat "Set command to " cjb-current-command)))
 
-(defcustom cjb-current-spec "foo" "the location of the test(s) to run")
-(defcustom cjb-spec-command "jasmine-node --coffee " "the command to run specs") ;make sure there's a space there
+(defcustom cjb-current-command "echo \"You have to set this.\"" "the command you want to run") ;make sure there's a space there
 
 (provide 'spec-runner)
