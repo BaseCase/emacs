@@ -10,7 +10,6 @@
 (global-set-key (kbd "C-M-t") 'text-mode)
 (global-set-key (kbd "C-M-o") 'org-mode)
 (global-set-key (kbd "M-T") '(lambda () (interactive) (term "/bin/bash")))
-(global-set-key (kbd "M-?") 'comment-region)
 (define-key global-map (kbd "C-c r")
   (lambda () (interactive) (org-capture nil "r")))
 (global-set-key (kbd "S-C-<left>") 'shrink-window-horizontally)
