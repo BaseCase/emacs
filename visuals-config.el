@@ -9,6 +9,12 @@
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
 
+(setq default-frame-alist
+      '(
+        (font . "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
+        (width . 130)
+        (height . 45)))
+
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
 (eval-after-load "color-theme"
@@ -19,8 +25,6 @@
      ;(color-theme-zenburn)
      ;(color-theme-hober)
      ))
-
-(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
 
 (add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
 (require 'rainbow-mode)
