@@ -4,8 +4,10 @@
 (setq-default indent-tabs-mode nil)
 (setq whitespace-style
       '(face
+        tabs
+        tab-mark
         space-before-tab
-        tab-mark))
+        trailing))
 
 ;;set Coffeescript indenting to the standard 2 spaces
 (defun coffee-custom ()
