@@ -44,5 +44,6 @@
 (require 'markdown-config)
 (require 'command-runner)
 (require 'scss-config)
+(require 'evil-config)
 
 (provide 'emacs-config)
