@@ -11,13 +11,9 @@
 (add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
 (require 'rainbow-mode)
 
-;;vvv neither of these make window size the right thing vvv
-;;(set-face-attribute 'default nil :font "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
-;;(set-default-font "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
-
 (setq default-frame-alist
       '(
-        (font . "-apple-Ubuntu_Mono-medium-normal-normal-*-17-*-*-*-p-0-iso10646-1")
+        (font . "-apple-Ubuntu_Mono-medium-normal-normal-*-18-*-*-*-m-0-iso10646-1")
         (width . 130)
         (height . 45)))
 
@@ -36,10 +32,5 @@
   "Switching windows causes the new active to have at least 80 columns"
   (when (< (window-body-width) 80)
     (enlarge-window (- 80 (window-body-width)) t)))
-
-(defun get-window-size ()
-  "Temporary utility function to help debug window resizing problems"
-  (interactive)
-  (message "The width is %d." (window-body-width)))
 
 (provide 'visuals-config)
