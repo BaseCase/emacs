@@ -14,8 +14,8 @@
 (setq default-frame-alist
       '(
         (font . "-apple-Ubuntu_Mono-medium-normal-normal-*-18-*-*-*-m-0-iso10646-1")
-        (width . 130)
-        (height . 45)))
+        (width . 80)
+        (height . 40)))
 
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
