@@ -9,6 +9,8 @@
          (with-current-buffer buf
            (ansi-color-apply-on-region (point-min) (point-max))))))
 
+(setq max-mini-window-height 1.0)
+
 (defun cjb-command-runner ()
   (interactive)
   (shell-command cjb-current-command))
@@ -18,6 +20,8 @@
   (setq cjb-current-command new-com)
   (message (concat "Set command to " cjb-current-command)))
 
-(defcustom cjb-current-command "echo \"You have to set this.\"" "the command you want to run") ;make sure there's a space there
+(defcustom cjb-current-command
+  "echo \"You have to set this.\""
+  "the command you want to run")
 
 (provide 'command-runner)
