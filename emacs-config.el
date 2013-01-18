@@ -16,6 +16,8 @@
     (if (not (string-match "/$" name))
         (rename-buffer (concat name "/") t))))
 
+(defalias 'grep-find-dired 'find-grep-dired)
+
 ;;unicode fixing
 (setq locale-coding-system 'utf-8)
 (set-terminal-coding-system 'utf-8)
