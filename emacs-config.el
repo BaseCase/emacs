@@ -16,6 +16,7 @@
     (if (not (string-match "/$" name))
         (rename-buffer (concat name "/") t))))
 
+(add-hook 'grep-mode-hook 'toggle-truncate-lines)
 (defalias 'grep-find-dired 'find-grep-dired)
 
 ;;unicode fixing
