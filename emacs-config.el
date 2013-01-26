@@ -3,6 +3,7 @@
 (setq make-backup-files nil)
 (put 'narrow-to-region 'disabled nil)
 (ido-mode t)
+(set-variable 'ido-enable-flex-matching t)
 (set-variable 'help-window-select t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq ispell-program-name "/usr/local/bin/aspell")
