@@ -8,5 +8,6 @@
         tab-mark
         space-before-tab
         trailing))
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'whitespace-config)
