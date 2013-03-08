@@ -15,7 +15,7 @@
       '(
         (font . "-apple-Ubuntu_Mono-medium-normal-normal-*-18-*-*-*-m-0-iso10646-1")
         (width . 80)
-        (height . 40)))
+        (height . 30)))
 
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
