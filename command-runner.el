@@ -13,6 +13,7 @@
 
 (defun cjb-command-runner ()
   (interactive)
+  (save-buffer)
   (shell-command cjb-current-command))
 
 (defun cjb-set-current-command (new-com)
