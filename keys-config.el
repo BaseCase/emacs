@@ -17,6 +17,8 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 (global-set-key (kbd "M-h") 'ns-do-hide-emacs)
+(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-]") 'forward-paragraph)
 
 ;;restore useful keys in term-mode
 (add-hook 'term-mode-hook '(lambda ()
