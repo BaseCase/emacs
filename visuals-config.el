@@ -1,3 +1,8 @@
+(add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
+(add-to-list 'load-path (concat cjb-load-path "color-theme"))
+(require 'rainbow-mode)
+(require 'color-theme)
+
 (tool-bar-mode -1)
 (setq inhibit-splash-screen t)
 (set-variable 'initial-scratch-message nil)
@@ -8,8 +13,7 @@
 (set-face-background 'hl-line "#333")
 (setq mouse-wheel-scroll-amount '(1))
 (setq mouse-wheel-progressive-speed nil)
-(add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
-(require 'rainbow-mode)
+
 
 (setq default-frame-alist
       '(
@@ -17,8 +21,6 @@
         (width . 80)
         (height . 30)))
 
-(add-to-list 'load-path (concat cjb-load-path "color-theme"))
-(require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)

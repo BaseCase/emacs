@@ -1,3 +1,6 @@
+(add-to-list 'load-path (concat cjb-load-path "key-chord"))
+(require 'key-chord)
+
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-'") 'clipboard-kill-region)
 (global-set-key (kbd "C-`") 'longlines-mode)
@@ -36,8 +39,6 @@
 (global-set-key (kbd "M-Z") 'backwards-zap-to-char)
 
 ;;key-chord business
-(add-to-list 'load-path (concat cjb-load-path "key-chord"))
-(require 'key-chord)
 (key-chord-mode 1)
 (key-chord-define-global ";'" 'ido-switch-buffer)
 (key-chord-define-global ":\"" 'buffer-menu-other-window)
