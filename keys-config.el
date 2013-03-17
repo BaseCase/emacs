@@ -1,6 +1,3 @@
-(add-to-list 'load-path (concat cjb-load-path "key-chord"))
-(require 'key-chord)
-
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-'") 'clipboard-kill-region)
 (global-set-key (kbd "C-`") 'longlines-mode)
@@ -37,15 +34,6 @@
   (zap-to-char -1 char))
 
 (global-set-key (kbd "M-Z") 'backwards-zap-to-char)
-
-;;key-chord business
-(key-chord-mode 1)
-(key-chord-define-global ";'" 'ido-switch-buffer)
-(key-chord-define-global ":\"" 'buffer-menu-other-window)
-(key-chord-define-global "<>" 'point-to-register)
-(key-chord-define-global ",." 'jump-to-register)
-(key-chord-define-global "-=" 'cjb-command-runner)
-(key-chord-define-global "_+" 'cjb-set-current-command)
 
 (defun up-one ()
   "idea taken from Tom Laudeman"
