@@ -8,4 +8,6 @@
   (skip-chars-forward "*-")
   (forward-char))
 
+(add-hook 'org-mode-hook '(lambda () (cjb-org-mode-keys)))
+
 (provide 'org-config)

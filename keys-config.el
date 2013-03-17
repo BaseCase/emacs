@@ -1,21 +1,31 @@
-(global-set-key (kbd "C-w")         'backward-kill-word)
+;; movement
 (global-set-key (kbd "M-[")         'backward-paragraph)
-(global-set-key (kbd "C-x C-b")     'buffer-menu-other-window)
-(global-set-key (kbd "C-\\")        'cjb-command-runner)
-(global-set-key (kbd "M-'")         'clipboard-kill-region)
-(global-set-key (kbd "M-p")         'down-one)
-(global-set-key (kbd "S-C-<up>")    'enlarge-window)
-(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "M-]")         'forward-paragraph)
-(global-set-key (kbd "M-/")         'hippie-expand)
-(global-set-key (kbd "C-'")         'ido-switch-buffer)
-(global-set-key (kbd "M-h")         'ns-do-hide-emacs)
-(global-set-key (kbd "C-]")         'other-window)
-(global-set-key (kbd "S-C-<down>")  'shrink-window)
-(global-set-key (kbd "S-C-<left>")  'shrink-window-horizontally)
+(global-set-key (kbd "M-p")         'down-one)
 (global-set-key (kbd "M-n")         'up-one)
 
-;;make CMD Meta and a couple other Mac-isms
+;; buffer/window navigation
+(global-set-key (kbd "C-x C-b")     'buffer-menu-other-window)
+(global-set-key (kbd "C-'")         'ido-switch-buffer)
+(global-set-key (kbd "C-]")         'other-window)
+
+;; deletion
+(global-set-key (kbd "M-Z")         'backwards-zap-to-char)
+(global-set-key (kbd "C-w")         'backward-kill-word)
+(global-set-key (kbd "M-'")         'clipboard-kill-region)
+
+;; random utilities
+(global-set-key (kbd "C-\\")        'cjb-command-runner)
+(global-set-key (kbd "M-/")         'hippie-expand)
+(global-set-key (kbd "M-h")         'ns-do-hide-emacs)
+
+;; window resizing
+(global-set-key (kbd "S-C-<up>")    'enlarge-window)
+(global-set-key (kbd "S-C-<down>")  'shrink-window)
+(global-set-key (kbd "S-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "S-C-<left>")  'shrink-window-horizontally)
+
+;; Make Mac's modifier keys sensible
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
@@ -25,17 +35,8 @@
   (interactive "cZap backwards to char: ")
   (zap-to-char -1 char))
 
-(global-set-key (kbd "M-Z") 'backwards-zap-to-char)
-
-(defun up-one ()
-  "idea taken from Tom Laudeman"
-  (interactive)
-  (scroll-up 1))
-
-(defun down-one ()
-  "idea taken from Tom Laudeman"
-  (interactive)
-  (scroll-down 1))
+(defun up-one () (interactive) (scroll-up 1))
+(defun down-one () (interactive) (scroll-down 1))
 
 (defun cjb-org-mode-keys ()
   "set keys I like in org buffers"
@@ -46,7 +47,5 @@
   (local-set-key (kbd "C-j") 'org-insert-todo-heading)
   (local-set-key (kbd "C-'") 'ido-switch-buffer)
   (local-set-key (kbd "M-m") 'cjb-back-to-indentation-org-version))
-
-(add-hook 'org-mode-hook '(lambda () (cjb-org-mode-keys)))
 
 (provide 'keys-config)
