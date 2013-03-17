@@ -1,3 +1,5 @@
+(global-set-key (kbd "C-\\") 'cjb-command-runner)
+(global-set-key (kbd "C-'") 'ido-switch-buffer)
 (global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key (kbd "M-'") 'clipboard-kill-region)
 (global-set-key (kbd "C-`") 'longlines-mode)
