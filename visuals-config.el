@@ -1,6 +1,4 @@
-(add-to-list 'load-path (concat cjb-load-path "rainbow-mode"))
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
-(require 'rainbow-mode)
 (require 'color-theme)
 
 (tool-bar-mode -1)
