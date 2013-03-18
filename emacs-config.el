@@ -49,6 +49,5 @@
 (require 'coffee-config)
 (require 'markdown-config)
 (require 'command-runner)
-(require 'evil-config)
 
 (provide 'emacs-config)
