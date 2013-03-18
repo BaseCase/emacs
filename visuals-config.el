@@ -1,10 +1,10 @@
 (add-to-list 'load-path (concat cjb-load-path "color-theme"))
 (require 'color-theme)
 
+(setq inhibit-splash-screen t
+      initial-scratch-message nil
+      scroll-conservatively 5)
 (tool-bar-mode -1)
-(setq inhibit-splash-screen t)
-(set-variable 'initial-scratch-message nil)
-(set-variable 'scroll-conservatively 5)
 (show-paren-mode 1)
 (column-number-mode 1)
 (global-hl-line-mode t)
