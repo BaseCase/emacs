@@ -28,6 +28,7 @@
  '(bold ((t (:weight bold))))
  '(bold-italic ((t (:slant italic :weight bold))))
  '(italic ((((supports :slant italic)) (:slant italic)) (((supports :underline t)) (:underline t)) (t (:slant italic))))
- '(underline ((((supports :underline t)) (:underline t)) (((supports :weight bold)) (:weight bold)) (t (:underline t)))))
+ '(underline ((((supports :underline t)) (:underline t)) (((supports :weight bold)) (:weight bold)) (t (:underline t))))
+ '(linum ((t (:background "black" :foreground "#353535")))))
 
 (provide-theme 'vivid-chalk)
