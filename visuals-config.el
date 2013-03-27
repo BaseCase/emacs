@@ -7,6 +7,7 @@
 (show-paren-mode 1)
 (column-number-mode 1)
 (global-hl-line-mode t)
+(global-linum-mode)
 
 (setq default-frame-alist
       '(
