@@ -8,7 +8,8 @@
         tab-mark
         space-before-tab
         trailing))
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;;disable for now...getting too many whitespace diffs in current codebase
+;;(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; current job house style:
 (add-hook 'html-mode-hook '(lambda ()
