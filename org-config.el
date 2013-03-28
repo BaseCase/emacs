@@ -1,6 +1,14 @@
 (setq org-hide-leading-stars t)
 (setq org-startup-indented t)
 
+(setq org-todo-keywords
+      '((sequence "TODO" "WORKING" "DONE")))
+
+(setq org-todo-keyword-faces
+           '(("TODO" . "LightSalmon")
+             ("WORKING" . "#acf")
+             ("DONE" . "green")))
+
 (add-hook 'org-mode-hook '(lambda () (cjb-org-mode-keys)))
 (add-hook 'org-mode-hook (lambda () (linum-mode 0)))
 
