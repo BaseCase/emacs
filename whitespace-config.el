@@ -9,6 +9,7 @@
         space-before-tab
         trailing))
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+(setq sentence-end-double-space nil)
 
 ;; current job house style:
 (add-hook 'html-mode-hook '(lambda ()
