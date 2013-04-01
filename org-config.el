@@ -19,7 +19,8 @@
   (local-set-key (kbd "S-C-<down>") 'shrink-window)
   (local-set-key (kbd "S-C-<up>") 'enlarge-window)
   (local-set-key (kbd "C-'") 'ido-switch-buffer)
-  (local-set-key (kbd "M-m") 'cjb-back-to-indentation-org-version))
+  (local-set-key (kbd "M-m") 'cjb-back-to-indentation-org-version)
+  (local-set-key (kbd "M-h")  'ns-do-hide-emacs))
 
 (defun cjb-back-to-indentation-org-version ()
   "Like M-m but skips the line item decorators in org mode"
