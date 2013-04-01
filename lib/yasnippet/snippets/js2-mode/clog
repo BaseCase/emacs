@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: clog
+# contributor: cjb
+# key: clog
+# --
+console.log("$0");
