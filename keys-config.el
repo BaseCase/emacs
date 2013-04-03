@@ -3,6 +3,8 @@
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'down-one)
 (global-set-key (kbd "M-n") 'up-one)
+(global-set-key (kbd "<down>") 'up-one)
+(global-set-key (kbd "<up>") 'down-one)
 
 ;; buffer/window navigation
 (global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
