@@ -38,6 +38,8 @@
                 "/usr/sbin:"
                 "/usr/local/bin:"))
 
+(setenv "NODE_PATH" "/usr/local/lib/node_modules")
+
 (server-start)
 
 (require 'coffee-config)
