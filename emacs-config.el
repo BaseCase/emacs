@@ -51,5 +51,6 @@
 (require 'visuals-config)
 (require 'whitespace-config)
 (require 'yasnippet-config)
+(require 'dot-config)
 
 (provide 'emacs-config)
