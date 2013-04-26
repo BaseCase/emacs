@@ -20,7 +20,7 @@ If on a Mac, you need Homebrew.
 
 ### JavaScript setup ###
 
-I use the mooz fork of js2-mode by default, which is quite slow if you don't compile it. Once in Emacs, do this:
+I use the mooz fork of js2-mode by default, which is slow if you don't compile it. Once in Emacs, do this:
 
 `M-x byte-compile-file emacs/lib/js2-mode/js2-mode.el`
 
