@@ -52,5 +52,6 @@
 (require 'whitespace-config)
 (require 'yasnippet-config)
 (require 'dot-config)
+(require 'house-style "house-style.el" 1)
 
 (provide 'emacs-config)
