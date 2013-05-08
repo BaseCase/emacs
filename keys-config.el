@@ -4,10 +4,11 @@
 (global-set-key (kbd "M-p") 'down-one)
 (global-set-key (kbd "M-n") 'up-one)
 
-;; buffer/window navigation
+;; buffer/window/file navigation
 (global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
 (global-set-key (kbd "C-'")     'ido-switch-buffer)
 (global-set-key (kbd "C-]")     'other-window)
+(global-set-key (kbd "C-x C-f") 'find-file-in-repository)
 
 ;; deletion
 (global-set-key (kbd "M-Z") 'backwards-zap-to-char)

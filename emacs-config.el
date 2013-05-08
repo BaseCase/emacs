@@ -2,10 +2,8 @@
 
 ;; random config not attached to a specific mode
 (setq make-backup-files nil
-      ido-enable-flex-matching t
       help-window-select t
       ispell-program-name "/usr/local/bin/aspell")
-(ido-mode t)
 (add-hook 'grep-mode-hook 'toggle-truncate-lines)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'grep-find-dired 'find-grep-dired)
@@ -52,6 +50,7 @@
 (require 'whitespace-config)
 (require 'yasnippet-config)
 (require 'dot-config)
+(require 'navigation-config)
 (require 'house-style "house-style.el" 1)
 
 (provide 'emacs-config)
