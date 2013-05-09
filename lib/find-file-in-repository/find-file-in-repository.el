@@ -114,7 +114,7 @@
 (defvar ffir-repository-types
   `((".git"   . ,(lambda (dir)
                    (ffir-shell-command
-                    "git ls-files -co --exclude-standard | grep -v migrations"     "\n" dir)))
+                    "git ls-files -co --exclude-standard | grep -Ev 'migrations|node_modules'"     "\n" dir)))
     (".hg"    . ,(lambda (dir)
                    (ffir-shell-command "hg locate -0"          "\0" dir)))
     ("_darcs" . ,(lambda (dir)
