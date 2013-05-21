@@ -20,6 +20,7 @@
 (global-set-key (kbd "C-\\") 'cjb-command-runner)
 (global-set-key (kbd "M-/")  'hippie-expand)
 (global-set-key (kbd "M-h")  'ns-do-hide-emacs)
+(global-set-key (kbd "C-`")  'toggle-truncate-lines)
 
 ;; window resizing
 (global-set-key (kbd "S-C-<up>")    'enlarge-window)
