@@ -24,7 +24,7 @@
  '(fringe ((t (:background "black"))))
  '(mode-line ((t (:background "#a5baf1" :foreground "black"))))
  '(isearch ((t (:background "#555" :foreground "#77f"))))
- '(default ((t (:inherit nil :stipple nil :background "Black" :foreground "White" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 180 :width normal :foundry "apple" :family "Ubuntu_Mono"))))
+ '(default ((t (:inherit nil :stipple nil :background "Black" :foreground "White" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "apple" :family "Ubuntu_Mono"))))
  '(bold ((t (:weight bold))))
  '(bold-italic ((t (:slant italic :weight bold))))
  '(italic ((((supports :slant italic)) (:slant italic)) (((supports :underline t)) (:underline t)) (t (:slant italic))))
