@@ -1,26 +1,27 @@
 ;; movement
-(global-set-key (kbd "M-[") 'backward-paragraph)
-(global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "M-p") 'down-one)
-(global-set-key (kbd "M-n") 'up-one)
-(global-set-key (kbd "C-s") 'isearch-forward-regexp)
+(global-set-key (kbd "M-[")         'backward-paragraph)
+(global-set-key (kbd "M-]")         'forward-paragraph)
+(global-set-key (kbd "M-p")         'down-one)
+(global-set-key (kbd "M-n")         'up-one)
+(global-set-key (kbd "C-s")         'isearch-forward-regexp)
 
 ;; buffer/window/file navigation
-(global-set-key (kbd "C-x C-b") 'buffer-menu-other-window)
-(global-set-key (kbd "C-'")     'ido-switch-buffer)
-(global-set-key (kbd "C-]")     'other-window)
-(global-set-key (kbd "C-x C-f") 'find-file-in-repository)
+(global-set-key (kbd "C-x C-b")     'buffer-menu-other-window)
+(global-set-key (kbd "C-'")         'ido-switch-buffer)
+(global-set-key (kbd "C-]")         'other-window)
+(global-set-key (kbd "C-x C-f")     'find-file-in-repository)
 
 ;; deletion
-(global-set-key (kbd "M-Z") 'backwards-zap-to-char)
-(global-set-key (kbd "C-w") 'backward-kill-word)
-(global-set-key (kbd "M-'") 'clipboard-kill-region)
+(global-set-key (kbd "M-Z")         'backwards-zap-to-char)
+(global-set-key (kbd "C-w")         'backward-kill-word)
+(global-set-key (kbd "M-'")         'clipboard-kill-region)
 
 ;; random utilities
-(global-set-key (kbd "C-\\") 'cjb-command-runner)
-(global-set-key (kbd "M-/")  'hippie-expand)
-(global-set-key (kbd "M-h")  'ns-do-hide-emacs)
-(global-set-key (kbd "C-`")  'toggle-truncate-lines)
+(global-set-key (kbd "C-\\")        'cjb-command-runner)
+(global-set-key (kbd "M-/")         'hippie-expand)
+(global-set-key (kbd "M-h")         'ns-do-hide-emacs)
+(global-set-key (kbd "C-`")         'toggle-truncate-lines)
+(global-set-key (kbd "M-*")         'rgrep)
 
 ;; window resizing
 (global-set-key (kbd "S-C-<up>")    'enlarge-window)
