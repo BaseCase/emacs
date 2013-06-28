@@ -24,3 +24,7 @@ I use the mooz fork of js2-mode by default, which is slow if you don't compile i
 
 `M-x byte-compile-file emacs/lib/js2-mode/js2-mode.el`
 
+### a test todo list
+
+- [ ] do this thing
+- [ ] then do this thing next
