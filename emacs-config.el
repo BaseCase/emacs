@@ -42,15 +42,17 @@
 
 (require 'coffee-config)
 (require 'command-runner)
+(require 'dot-config)
 (require 'javascript-config)
 (require 'keys-config)
 (require 'markdown-config)
+(require 'navigation-config)
 (require 'org-config)
+(require 'stylus-config)
 (require 'visuals-config)
 (require 'whitespace-config)
 (require 'yasnippet-config)
-(require 'dot-config)
-(require 'navigation-config)
+
 (require 'house-style "house-style.el" 1)
 
 (provide 'emacs-config)
