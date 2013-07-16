@@ -43,6 +43,7 @@
 (require 'coffee-config)
 (require 'command-runner)
 (require 'dot-config)
+(require 'handlebars-config)
 (require 'javascript-config)
 (require 'keys-config)
 (require 'markdown-config)
