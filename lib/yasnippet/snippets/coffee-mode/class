@@ -1,8 +1,0 @@
-# -*- mode: snippet -*-
-# name: class
-# contributor: cjb
-# key: class
-# --
-class ${1:Foo}
-$0
-exports.${$1} = ${$1}

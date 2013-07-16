@@ -52,7 +52,6 @@
 (require 'stylus-config)
 (require 'visuals-config)
 (require 'whitespace-config)
-(require 'yasnippet-config)
 
 (require 'house-style "house-style.el" 1)
 

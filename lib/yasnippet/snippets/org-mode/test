@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: test
-# contributor: cjb
-# key: test
-# --
-* Tests to write [/]
-- [ ] $0
