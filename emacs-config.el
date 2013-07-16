@@ -7,6 +7,7 @@
 (add-hook 'grep-mode-hook 'toggle-truncate-lines)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'grep-find-dired 'find-grep-dired)
+(electric-indent-mode +1)
 
 ;; make Unicode work right
 (setq locale-coding-system 'utf-8)
