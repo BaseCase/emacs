@@ -10,6 +10,7 @@
 (global-set-key (kbd "C-'")         'ido-switch-buffer)
 (global-set-key (kbd "C-]")         'other-window)
 (global-set-key (kbd "C-x C-f")     'find-file-in-repository)
+(global-set-key (kbd "M-i")         'rename-buffer)
 
 ;; deletion
 (global-set-key (kbd "M-Z")         'backwards-zap-to-char)
