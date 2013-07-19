@@ -44,7 +44,6 @@
 (require 'coffee-config)
 (require 'command-runner)
 (require 'dot-config)
-(require 'handlebars-config)
 (require 'javascript-config)
 (require 'keys-config)
 (require 'markdown-config)
@@ -53,6 +52,7 @@
 (require 'python-config)
 (require 'stylus-config)
 (require 'visuals-config)
+(require 'web-mode-config)
 (require 'whitespace-config)
 
 (require 'house-style "house-style.el" 1)

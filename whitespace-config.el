@@ -7,7 +7,6 @@
 (custom-set-variables
  '(js2-basic-offset 2))
 
-(global-whitespace-mode t)
 (add-hook 'before-save-hook 'whitespace-cleanup)
 (setq whitespace-style
       '(face
@@ -17,5 +16,11 @@
         trailing))
 
 (setq sentence-end-double-space nil)
+
+;; set whitespace mode on only for certain modes:
+;; (this might belong in their individual configs...not sure)
+(add-hook 'python-mode-hook (lambda () (whitespace-mode t)))
+(add-hook 'js2-mode-hook (lambda () (whitespace-mode t)))
+(add-hook 'coffee-mode-hook (lambda () (whitespace-mode t)))
 
 (provide 'whitespace-config)
