@@ -50,6 +50,7 @@
 (require 'markdown-config)
 (require 'navigation-config)
 (require 'org-config)
+(require 'python-config)
 (require 'stylus-config)
 (require 'visuals-config)
 (require 'whitespace-config)
