@@ -30,4 +30,10 @@
   (skip-chars-forward "*-")
   (forward-char))
 
+(defun sharpen ()
+  "open up my 'tool sharpening list' org file to take notes on self improvements"
+  (interactive)
+  (find-file "~/Dropbox/tool_sharpening_list.org"))
+
+
 (provide 'org-config)
