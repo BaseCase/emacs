@@ -35,5 +35,9 @@
   (interactive)
   (find-file "~/Dropbox/tool_sharpening_list.org"))
 
+(defun daily ()
+  "open up my 'daily notes' org file to take temporary notes on the day's work"
+  (interactive)
+  (find-file "~/Desktop/daily_notes.org"))
 
 (provide 'org-config)
