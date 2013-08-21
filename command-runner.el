@@ -1,6 +1,9 @@
 ; make sure the output display works
 (require 'ansi-color)
 
+;; load my .bashrc for shell commands
+(setq shell-command-switch "-ic")
+
 (defadvice display-message-or-buffer (before ansi-color activate)
   "Process ANSI color codes in shell output."
   (let ((buf (ad-get-arg 0)))
