@@ -43,4 +43,11 @@
 (defun up-one () (interactive) (scroll-up 1))
 (defun down-one () (interactive) (scroll-down 1))
 
+;; in *Buffer List* buffers, 's' will sort by filename
+(defun buffer-menu-sort-by-filename ()
+  (interactive)
+  (Buffer-menu-sort 5))
+(add-hook 'Buffer-menu-mode-hook
+          (lambda () (local-set-key (kbd "s") 'buffer-menu-sort-by-filename)))
+
 (provide 'keys-config)
