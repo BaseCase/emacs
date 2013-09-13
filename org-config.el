@@ -38,6 +38,6 @@
 (defun daily ()
   "open up my 'daily notes' org file to take temporary notes on the day's work"
   (interactive)
-  (find-file "~/Desktop/daily_notes.org"))
+  (find-file "~/Dropbox/daily_notes.org"))
 
 (provide 'org-config)
