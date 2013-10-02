@@ -46,7 +46,7 @@
 ;; in *Buffer List* buffers, 's' will sort by filename
 (defun buffer-menu-sort-by-filename ()
   (interactive)
-  (Buffer-menu-sort 5))
+  (Buffer-menu-sort 6))
 (add-hook 'Buffer-menu-mode-hook
           (lambda () (local-set-key (kbd "s") 'buffer-menu-sort-by-filename)))
 
