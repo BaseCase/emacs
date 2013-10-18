@@ -33,7 +33,7 @@
 (defun sharpen ()
   "open up my 'tool sharpening list' org file to take notes on self improvements"
   (interactive)
-  (find-file "~/Dropbox/tool_sharpening_list.org"))
+  (find-file "~/Dropbox/tool_sharpening_list.md"))
 
 (defun daily ()
   "open up my 'daily notes' org file to take temporary notes on the day's work"
