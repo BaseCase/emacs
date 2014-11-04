@@ -1,4 +1,4 @@
-(defvar cjb-load-path "~/emacs/lib/")
+(defvar lib-load-path "~/emacs/lib/")
 
 ;; on OS X, set modifier keys nicely
 (setq mac-option-key-is-meta nil)
@@ -13,5 +13,12 @@
 	(width . 100)
 	(height . 50)
 	(font . "Source Code Pro-16")))
+
+(setq make-backup-files nil)
+
+;; EEEEEEVIL!!
+(add-to-list 'load-path (concat lib-load-path "evil"))
+(require 'evil)
+(evil-mode 1)
 
 (provide 'emacs-config)
