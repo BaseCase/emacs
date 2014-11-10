@@ -1,24 +1,81 @@
 (defvar lib-load-path "~/emacs/lib/")
 
-;; on OS X, set modifier keys nicely
+;;
+;; Command is Meta on OSX
+;;
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
-(prefer-coding-system 'utf-8)
 
+
+
+;;
+;; misc settings
+;;
+(prefer-coding-system 'utf-8)
+(setq make-backup-files nil)
+
+
+
+;;
+;; visual stuff
+;;
 (setq default-frame-alist
       '(
 	(width . 100)
 	(height . 50)
 	(font . "Source Code Pro-16")))
 
-(setq make-backup-files nil)
 
+
+;;
 ;; EEEEEEVIL!!
+;;
 (add-to-list 'load-path (concat lib-load-path "evil"))
 (require 'evil)
-(evil-mode 1)
+(add-hook 'evil-mode-hook (lambda ()
+			    (local-set-key (kbd "C-z") 'switch-to-term)))
+(evil-mode 0)
+(global-set-key (kbd "M-z") 'evil-mode)
+
+
+
+
+;;
+;; term stuff
+;;
+(defun switch-to-term ()
+  (interactive)
+  (term "/bin/bash"))
+(global-set-key (kbd "C-z") 'switch-to-term)
+
+
+
+
+;;
+;; EmacsWiki copypasta so I can C-c to ESC in Evil mode
+;;
+;; (defun my-esc (prompt)
+;;   "Functionality for escaping generally.  Includes exiting Evil insert state and C-g binding. "
+;;   (cond
+;;    ;; If we're in one of the Evil states that defines [escape] key, return [escape] so as
+;;    ;; Key Lookup will use it.
+;;    ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
+;;    ;; This is the best way I could infer for now to have C-c work during evil-read-key.
+;;    ;; Note: As long as I return [escape] in normal-state, I don't need this.
+;;    ;;((eq overriding-terminal-local-map evil-read-key-map) (keyboard-quit) (kbd ""))
+;;    (t (kbd "C-g"))))
+;; (define-key key-translation-map (kbd "C-c") 'my-esc)
+;; ;; Works around the fact that Evil uses read-event directly when in operator state, which
+;; ;; doesn't use the key-translation-map.
+;; (define-key evil-operator-state-map (kbd "C-c") 'keyboard-quit)
+;; ;; Not sure what behavior this changes, but might as well set it, seeing the Elisp manual's
+;; ;; documentation of it.
+;; (set-quit-char "C-c")
+
+
+
 
 (provide 'emacs-config)
