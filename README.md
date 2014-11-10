@@ -4,5 +4,4 @@ My personal Emacs configuration. Blew almost everything away in this branch to r
 
 ## Setting up
 
-1. `cd ~/emacs`
-1. `mv .emacs ~`
+1. `ln -s ~/emacs/.emacs .emacs`

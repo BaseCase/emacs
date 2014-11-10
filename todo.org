@@ -1,4 +1,4 @@
-* Learning Emacs (the second time) [5/23]
+* Learning Emacs (the second time) [8/23]
 - [X] read the Tutorial
 - [X] add other stuff from splash screen here
 - [X] do the "online" guided tour thing
@@ -7,10 +7,10 @@
 - [ ] skim over the Emacs Info
 - [ ] read the Emacs FAQ
 - [ ] read the CC Mode Info
-- [ ] read nXML mode Info
-- [ ] read ERC Info
+- [X] read nXML mode Info
+- [X] read ERC Info
 - [ ] read the Gnus Info
-- [ ] read the Rcirc Info
+- [X] read the Rcirc Info
 - [ ] read the TRAMP Info
 - [ ] read the Autotype Info
 - [ ] read the Calc Info
