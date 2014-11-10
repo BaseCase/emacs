@@ -16,6 +16,8 @@
 ;;
 (prefer-coding-system 'utf-8)
 (setq make-backup-files nil)
+(setq help-window-select t)
+(setq scroll-conservatively 5)
 
 
 
@@ -27,6 +29,13 @@
 	(width . 100)
 	(height . 50)
 	(font . "Source Code Pro-16")))
+
+(add-to-list 'custom-theme-load-path lib-load-path)
+(load-theme 'wilson t)
+
+(tool-bar-mode -1)
+(setq inhibit-splash-screen t)
+
 
 
 
