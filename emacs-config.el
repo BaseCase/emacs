@@ -18,6 +18,7 @@
 (setq make-backup-files nil)
 (setq help-window-select t)
 (setq scroll-conservatively 5)
+(global-set-key (kbd "C-x C-b") 'buffer-menu)
 
 
 
