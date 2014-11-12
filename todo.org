@@ -24,6 +24,13 @@
 - [ ] read the EVIL manual
 
 
-* setup [1/2]
+* setup to do [1/2]
 - [X] set font
 - [ ] check out old emacs setup for some obvious things you'll need (but only take what's absolutely necessary)
+
+
+* notes as I'm relearning stuff
+
+- STOPPED AT: Fundamental Editing Commands
+
+** keys to re-memorize

@@ -66,6 +66,13 @@
 
 
 ;;
+;; rando keybindings
+;;
+(global-set-key (kbd "C-w") 'backward-kill-word)
+
+
+
+;;
 ;; EmacsWiki copypasta so I can C-c to ESC in Evil mode
 ;;
 ;; (defun my-esc (prompt)
