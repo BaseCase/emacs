@@ -52,7 +52,7 @@
   "Turn C-c into basically what it is in Vim."
   (cond
    ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
-   (t (kbd "C-g"))))
+   (t (kbd "C-c"))))
 (define-key key-translation-map (kbd "C-c") 'my-esc)
 (define-key evil-operator-state-map (kbd "C-g") 'keyboard-quit)
 (evil-mode 0)
