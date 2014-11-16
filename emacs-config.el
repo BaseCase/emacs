@@ -1,4 +1,4 @@
-(defvar lib-load-path "~/emacs/lib/")
+ (defvar lib-load-path "~/emacs/lib/")
 
 ;;
 ;; Command is Meta on OSX
@@ -47,8 +47,15 @@
 (add-to-list 'load-path (concat lib-load-path "evil"))
 (require 'evil)
 (define-key evil-normal-state-map "\C-z" 'switch-to-term)
-(evil-mode 0)
 (global-set-key (kbd "M-z") 'evil-mode)
+(defun my-esc (prompt)
+  "Turn C-c into basically what it is in Vim."
+  (cond
+   ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
+   (t (kbd "C-g"))))
+(define-key key-translation-map (kbd "C-c") 'my-esc)
+(define-key evil-operator-state-map (kbd "C-g") 'keyboard-quit)
+(evil-mode 0)
 
 
 
@@ -60,6 +67,9 @@
   (interactive)
   (term "/bin/bash"))
 (global-set-key (kbd "C-z") 'switch-to-term)
+(add-hook 'term-mode-hook
+	  '(lambda ()
+	     (term-set-escape-char ?\C-x)))
 
 
 
@@ -71,26 +81,6 @@
 
 
 
-;;
-;; EmacsWiki copypasta so I can C-c to ESC in Evil mode
-;;
-;; (defun my-esc (prompt)
-;;   "Functionality for escaping generally.  Includes exiting Evil insert state and C-g binding. "
-;;   (cond
-;;    ;; If we're in one of the Evil states that defines [escape] key, return [escape] so as
-;;    ;; Key Lookup will use it.
-;;    ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
-;;    ;; This is the best way I could infer for now to have C-c work during evil-read-key.
-;;    ;; Note: As long as I return [escape] in normal-state, I don't need this.
-;;    ;;((eq overriding-terminal-local-map evil-read-key-map) (keyboard-quit) (kbd ""))
-;;    (t (kbd "C-g"))))
-;; (define-key key-translation-map (kbd "C-c") 'my-esc)
-;; ;; Works around the fact that Evil uses read-event directly when in operator state, which
-;; ;; doesn't use the key-translation-map.
-;; (define-key evil-operator-state-map (kbd "C-c") 'keyboard-quit)
-;; ;; Not sure what behavior this changes, but might as well set it, seeing the Elisp manual's
-;; ;; documentation of it.
-;; (set-quit-char "C-c")
 
 
 

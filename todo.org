@@ -1,4 +1,4 @@
-* Learning Emacs (the second time) [9/23]
+* Learning Emacs (the second time) [10/23]
 - [X] read the Tutorial
 - [X] add other stuff from splash screen here
 - [X] do the "online" guided tour thing
@@ -21,7 +21,7 @@
 - [ ] figure out what shell you should use, then read its Info
 - [ ] read the Ido manual Info
 - [ ] read the Org mode manual
-- [ ] read the EVIL manual
+- [X] read the EVIL manual
 
 
 * setup to do [1/2]
@@ -31,6 +31,6 @@
 
 * notes as I'm relearning stuff
 
-- STOPPED AT: Fundamental Editing Commands
+- STOPPED AT: Fundamental Editing Commands > Basic Editing Commands
 
 ** keys to re-memorize
