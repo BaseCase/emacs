@@ -34,7 +34,6 @@
 
 (add-to-list 'custom-theme-load-path lib-load-path)
 (load-theme 'wilson t)
-
 (tool-bar-mode -1)
 (setq inhibit-splash-screen t)
 
@@ -47,6 +46,7 @@
 (add-to-list 'load-path (concat lib-load-path "evil"))
 (require 'evil)
 (define-key evil-normal-state-map "\C-z" 'switch-to-term)
+(define-key evil-normal-state-map "\C-u" 'evil-scroll-up)
 (global-set-key (kbd "M-z") 'evil-mode)
 (defun my-esc (prompt)
   "Turn C-c into basically what it is in Vim."
