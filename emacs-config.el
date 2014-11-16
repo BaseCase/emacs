@@ -46,8 +46,7 @@
 ;;
 (add-to-list 'load-path (concat lib-load-path "evil"))
 (require 'evil)
-(add-hook 'evil-mode-hook (lambda ()
-			    (local-set-key (kbd "C-z") 'switch-to-term)))
+(define-key evil-normal-state-map "\C-z" 'switch-to-term)
 (evil-mode 0)
 (global-set-key (kbd "M-z") 'evil-mode)
 
