@@ -55,6 +55,7 @@
    (t (kbd "C-c"))))
 (define-key key-translation-map (kbd "C-c") 'my-esc)
 (define-key evil-operator-state-map (kbd "C-g") 'keyboard-quit)
+(add-to-list 'evil-emacs-state-modes 'org-mode)
 (evil-mode 0)
 
 
