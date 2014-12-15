@@ -30,7 +30,7 @@
       '(
 	(width . 100)
 	(height . 50)
-	(font . "Source Code Pro-16")))
+	(font . "Source Code Pro-14")))
 
 (add-to-list 'custom-theme-load-path lib-load-path)
 (load-theme 'wilson t)
