@@ -1,4 +1,4 @@
- (defvar lib-load-path "~/emacs/lib/")
+(defvar lib-load-path "~/emacs/lib/")
 
 ;;
 ;; Command is Meta on OSX
@@ -7,8 +7,6 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
-
-
 
 
 ;;
@@ -22,7 +20,6 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 
-
 ;;
 ;; visual stuff
 ;;
@@ -32,33 +29,12 @@
 	(height . 50)
 	(font . "Source Code Pro-14")))
 
-(add-to-list 'custom-theme-load-path lib-load-path)
-(load-theme 'wilson t)
+;;(add-to-list 'custom-theme-load-path lib-load-path)
+;;(load-theme 'wilson t)
 (tool-bar-mode -1)
 (setq inhibit-splash-screen t)
-
-
-
-
-;;
-;; EEEEEEVIL!!
-;;
-(add-to-list 'load-path (concat lib-load-path "evil"))
-(require 'evil)
-(define-key evil-normal-state-map "\C-z" 'switch-to-term)
-(define-key evil-normal-state-map "\C-u" 'evil-scroll-up)
-(global-set-key (kbd "M-z") 'evil-mode)
-(defun my-esc (prompt)
-  "Turn C-c into basically what it is in Vim."
-  (cond
-   ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
-   (t (kbd "C-c"))))
-(define-key key-translation-map (kbd "C-c") 'my-esc)
-(define-key evil-operator-state-map (kbd "C-g") 'keyboard-quit)
-(add-to-list 'evil-emacs-state-modes 'org-mode)
-(evil-mode 0)
-
-
+(global-hl-line-mode t)
+(set-face-background hl-line-face "#EEEEEE")
 
 
 ;;
@@ -73,17 +49,10 @@
 	     (term-set-escape-char ?\C-x)))
 
 
-
-
 ;;
 ;; rando keybindings
 ;;
 (global-set-key (kbd "C-w") 'backward-kill-word)
-
-
-
-
-
 
 
 (provide 'emacs-config)
