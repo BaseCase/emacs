@@ -1,7 +1,5 @@
 # cjb's Emacs setup
 
-My personal Emacs configuration. Blew almost everything away in this branch to relearn from scratch.
-
-## Setting up
-
-1. `ln -s ~/emacs/.emacs .emacs`
+This is now defunct, I'm just keeping it around in case I ever want to go back
+and look at it. If you want to see this setup at the height of its
+ridiculousness, check out commit ccea95d4cc19c44136be4c891701c1c1be68cde3.
